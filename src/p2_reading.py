@@ -130,7 +130,7 @@ def FFT(s):
 senal=['oximetro','respirograma','ecg','emg','pulso']
 name=["first.txt","second tab.txt","third.txt","four tab.txt","five.txt"]
 lavel = ['Primera Etapa','Segunda etapa', 'Tercera etapa','Cuarta etapa','Quinta etapa']
-via="/Users/alan_/OneDrive/Documentos/Metodos computacionales/MCIB-19-P/data/"
+via="/home/omarpr/git/MCIB-19P-eval/MA/data/"
 fs=1000
 ts=1/fs
 data=[]
