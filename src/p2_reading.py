@@ -245,7 +245,7 @@ for i in range(len(senal)):
 for i in range(len(senal)):
     plt.figure()
     for j in range(1):
-        plt.plot(data2[j][80000:83000,0],acnd[j+3][i][80000:83000],label=lavel[j+3])
+        plt.plot(data2[j][63000:85000,0],acnd[j+3][i][63000:85000],label=lavel[j+3])
         legend = plt.legend(loc='lower left', shadow=True, fontsize='small')
         legend.get_frame().set_facecolor('pink') 
         plt.title(senal[i])
@@ -253,5 +253,5 @@ for i in range(len(senal)):
         plt.xlabel('segundos')
         plt.grid()   
         
-np.savez_compressed(via+'acondicionada.npz',acnd)
-np.savez_compressed(via+'data.npz',data)
+np.savez_compressed(via+'acondicionada.npz',oxigenacion=acnd[3][0][:],respiracion=acnd[3][1][:],ecg=acnd[3][2][:],emg=acnd[3][3][:],pulso=acnd[3][4][:],sr=fs)
+np.savez_compressed(via+'data.npz',x=data)
